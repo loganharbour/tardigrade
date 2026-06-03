@@ -6,6 +6,7 @@ InputParameters
 KMaterial::validParams()
 {
   InputParameters params = Material::validParams();
+  params.addParam<MaterialName>("k_name", "k", "The name of material property for k");
   return params;
 }
 
