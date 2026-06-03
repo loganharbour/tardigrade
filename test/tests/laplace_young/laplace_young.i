@@ -24,6 +24,7 @@
 [Materials]
   [k]
     type = KMaterial
+    variable = u
   []
 []
 

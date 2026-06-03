@@ -13,4 +13,5 @@ protected:
   virtual void computeQpProperties();
 
   ADMaterialProperty<Real> & _k;
+  const ADVariableGradient & _grad_u;
 };
