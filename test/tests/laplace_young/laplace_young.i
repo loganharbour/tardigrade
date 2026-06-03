@@ -12,7 +12,7 @@
   [diffusion]
     type = ADMatDiffusion
     variable = u
-    diffusivity = k
+    diffusivity = k_name
   []
   [reaction]
     type = ADReaction
@@ -25,6 +25,7 @@
   [k]
     type = KMaterial
     variable = u
+    k_name = k
   []
 []
 
@@ -33,9 +34,14 @@
     type = ADNeumannBC
     boundary = "top right bottom left"
     variable = u
+    value = 0.2
   []
 []
 
 [Executioner]
   type = Steady
+[]
+
+[Outputs]
+  exodus = true
 []
