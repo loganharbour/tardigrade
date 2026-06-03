@@ -19,5 +19,5 @@ KMaterial::KMaterial(const InputParameters & parameters)
 void
 KMaterial::computeQpProperties()
 {
-    _k[_qp] = 0;
+    _k[_qp] = 1 / std::sqrt(1 + _grad_u[_qp] *  _grad_u[_qp]);
 }
