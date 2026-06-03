@@ -21,6 +21,11 @@
   []
 []
 
+[Materials]
+  [k]
+    type = KMaterial
+  []
+[]
 
 [BCs]
   [neumann]
