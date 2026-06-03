@@ -11,4 +11,6 @@ public:
 
 protected:
   virtual void computeQpProperties();
+
+  ADMaterialProperty<Real> & _k;
 };

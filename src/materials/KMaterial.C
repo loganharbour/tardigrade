@@ -11,7 +11,7 @@ KMaterial::validParams()
 }
 
 KMaterial::KMaterial(const InputParameters & parameters)
-  : Material(parameters)
+  : Material(parameters), _k(declareADProperty<Real>("k_name"))
 {
 }
 
