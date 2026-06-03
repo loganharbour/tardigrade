@@ -8,6 +8,14 @@
 [Variables/u]
 []
 
+[Kernels]
+  [diffusion]
+    type = ADMatDiffusion
+    variable = u
+    diffusivity = 1
+  []
+[]
+
 [Executioner]
   type = Steady
 []
