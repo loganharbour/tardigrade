@@ -14,6 +14,11 @@
     variable = u
     diffusivity = 1
   []
+  [reaction]
+    type = ADReaction
+    variable = u
+    rate = 1
+  []
 []
 
 [Executioner]
