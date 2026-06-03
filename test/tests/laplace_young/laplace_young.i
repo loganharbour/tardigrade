@@ -21,6 +21,15 @@
   []
 []
 
+
+[BCs]
+  [neumann]
+    type = ADNeumannBC
+    boundary = "top right bottom left"
+    variable = u
+  []
+[]
+
 [Executioner]
   type = Steady
 []
