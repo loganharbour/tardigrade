@@ -12,7 +12,7 @@
   [diffusion]
     type = ADMatDiffusion
     variable = u
-    diffusivity = 1
+    diffusivity = k
   []
   [reaction]
     type = ADReaction
